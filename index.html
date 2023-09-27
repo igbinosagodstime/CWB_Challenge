@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+   body{
+    background-color: hsl(30, 38%, 92%);
+    position:relative;
+   }
+   img{
+    height: 400px;
+    width: 300px;
+   }
+  .container{
+    padding: 70px 30px;
+    margin-top: 80px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+   }
+   .grid-container {
+            display: grid;
+            padding: 10px;
+            grid-template-columns: auto auto;
+        }
+    .grid-item2{
+        background-color: white;   
+        height: 400px;
+        width: 220px;
+        padding: 0 30px;
+    }
+    button{
+        background-color: hsl(158, 36%, 37%);
+        border:none;
+        align-items: center;
+        height: 40px;
+        width: 200px;
+        color:white;
+        border-radius: 10px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: hsl(158, 37%, 16%);
+        border:none;
+        align-items: center;
+        height: 40px;
+        width: 200px;
+        color:white;
+        border-radius: 10px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    span.one{
+        font-size: 14px;
+        font-family: Montserrat;
+    }
+    h1{
+        font-family:Fraunces;
+        
+    }
+    span.two{
+        font-size: 14px;
+        margin: 20px 20px;
+        text-decoration: line-through;
+    }
+    span.three {
+        color: hsl(158, 36%, 37%);
+        font-family:Fraunces;
+
+    }
+   
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="grid-container">
+    <div class="grid-item1">
+        <div>  <img src="images/image-product-desktop.jpg"> </div>
+    </div>
+
+    <div class="grid-item2">
+        <h3>PERFUME</h3>
+
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+
+       <span class="one"> <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p> </span>
+
+        <h2><span class="three">$149.99 </span> <span class="two">$169.99</span></h2>
+  
+
+        <div> <button type="button"> Add to Cart </button> </div>
+        </div>
+        
+    </div>
+</div>
+  
+</body>
+</html>
